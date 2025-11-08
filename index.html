@@ -10,6 +10,8 @@
   <link rel="icon" type="image/x-icon" href="images/Logo.ico">
 
   <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap">
   <link rel="stylesheet" href="fonts/icomoon/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
@@ -27,7 +29,7 @@
   <div id="overlayer"></div>
   <div class="loader">
     <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
+      <span class="sr-only" data-i18n-key="loader.loading">Loading...</span>
     </div>
   </div>
   <div class="site-wrap" id="home-section">
@@ -52,12 +54,18 @@
           <div class="col-12 col-md-9 col-xl-8 main-menu">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block ml-0 pl-0">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#features-section" class="nav-link">Features</a></li>
-                <li><a href="#about-section" class="nav-link">About Us</a></li>
-                <li><a href="#plans-section" class="nav-link">Plans</a></li>
-                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                <li><a href="#home-section" class="nav-link" data-i18n-key="nav.home">Home</a></li>
+                <li><a href="#features-section" class="nav-link" data-i18n-key="nav.features">Features</a></li>
+                <li><a href="#about-section" class="nav-link" data-i18n-key="nav.about">About Us</a></li>
+                <li><a href="#plans-section" class="nav-link" data-i18n-key="nav.plans">Plans</a></li>
+                <li><a href="#testimonials-section" class="nav-link" data-i18n-key="nav.testimonials">Testimonials</a></li>
+                <li><a href="#contact-section" class="nav-link" data-i18n-key="nav.contact">Contact</a></li>
+                <li class="language-menu-item">
+                  <div class="language-switcher" role="group" aria-label="Language switcher">
+                    <button type="button" class="language-option active" data-lang="en">EN</button>
+                    <button type="button" class="language-option" data-lang="ar">AR</button>
+                  </div>
+                </li>
               </ul>
             </nav>
           </div>
@@ -78,12 +86,12 @@
             <img src="images/undraw_investing_7u74.svg" alt="Image" class="img-fluid img-absolute">
             <div class="row mb-4" data-aos="fade-up" data-aos-delay="200">
               <div class="col-lg-6 mr-auto">
-                <h1>Make Your Business More Profitable</h1>
-                <p class="mb-5">Start. Grow. Sell. with <span class="text-primary fw-semibold">Nomo</span> — Where
+                <h1 data-i18n-key="hero.title">Make Your Business More Profitable</h1>
+                <p class="mb-5" data-i18n-key="hero.subtitle">Start. Grow. Sell. with <span class="text-primary fw-semibold">Nomo</span> — Where
                   Online Business Begins.<br>Build your brand. Scale
                   your dream. Own your market at all platforms.</p>
                 <div>
-                  <a href="#features-section" class="btn btn-primary mr-2 mb-2">See More</a>
+                  <a href="#features-section" class="btn btn-primary mr-2 mb-2" data-i18n-key="hero.cta">See More</a>
                 </div>
               </div>
             </div>
@@ -96,8 +104,8 @@
       <div class="container">
         <div class="row mb-5 justify-content-center text-center" data-aos="fade-up">
           <div class="col-7 text-center mb-5">
-            <h2 class="section-title">Nomo Core Features</h2>
-            <p class="lead">
+            <h2 class="section-title" data-i18n-key="features.title">Nomo Core Features</h2>
+            <p class="lead" data-i18n-key="features.lead">
               Built for growth, powered by every modern eCommerce feature.
               Nomo gives you everything to start, scale, and succeed online.
             </p>
@@ -113,8 +121,8 @@
                 <span class="icon-wrap"><span class="text-primary icon-cog"></span></span>
               </div>
               <div>
-                <h3>Store Configuration</h3>
-                <p>Manage bilingual storefronts, multiple currencies and languages, and tax settings — all from one
+                <h3 data-i18n-key="features.store.title">Store Configuration</h3>
+                <p data-i18n-key="features.store.desc">Manage bilingual storefronts, multiple currencies and languages, and tax settings — all from one
                   unified dashboard.</p>
               </div>
             </div>
@@ -127,8 +135,8 @@
                 <span class="icon-wrap"><span class="text-primary icon-shopping_basket"></span></span>
               </div>
               <div>
-                <h3>Product & Inventory Management</h3>
-                <p>Organize unlimited products and categories, adjust prices, apply discounts and coupons, and control
+                <h3 data-i18n-key="features.inventory.title">Product &amp; Inventory Management</h3>
+                <p data-i18n-key="features.inventory.desc">Organize unlimited products and categories, adjust prices, apply discounts and coupons, and control
                   stock with advanced inventory tools.</p>
               </div>
             </div>
@@ -141,8 +149,8 @@
                 <span class="icon-wrap"><span class="text-primary icon-credit-card"></span></span>
               </div>
               <div>
-                <h3>Sales & Payments</h3>
-                <p>Streamline order and invoice management, connect payment gateways and shipping carriers, gift cards,
+                <h3 data-i18n-key="features.sales.title">Sales &amp; Payments</h3>
+                <p data-i18n-key="features.sales.desc">Streamline order and invoice management, connect payment gateways and shipping carriers, gift cards,
                   and reward points.</p>
               </div>
             </div>
@@ -155,8 +163,8 @@
                 <span class="icon-wrap"><span class="text-primary icon-bullhorn"></span></span>
               </div>
               <div>
-                <h3>Marketing & Engagement</h3>
-                <p>Engage customers with product reviews, affiliate programs, newsletters, and content marketing tools
+                <h3 data-i18n-key="features.marketing.title">Marketing &amp; Engagement</h3>
+                <p data-i18n-key="features.marketing.desc">Engage customers with product reviews, affiliate programs, newsletters, and content marketing tools
                   that boost visibility and loyalty.</p>
               </div>
             </div>
@@ -169,8 +177,8 @@
                 <span class="icon-wrap"><span class="text-primary icon-bar-chart"></span></span>
               </div>
               <div>
-                <h3>Analytics & Reporting</h3>
-                <p>Access detailed dashboards and exportable reports on sales, performance, and customer behavior to
+                <h3 data-i18n-key="features.analytics.title">Analytics &amp; Reporting</h3>
+                <p data-i18n-key="features.analytics.desc">Access detailed dashboards and exportable reports on sales, performance, and customer behavior to
                   guide smarter business decisions.</p>
               </div>
             </div>
@@ -183,8 +191,8 @@
                 <span class="icon-wrap"><span class="text-primary icon-life-ring"></span></span>
               </div>
               <div>
-                <h3>Support & Management</h3>
-                <p>Empower your team with multi-user access, mobile apps, and priority support — ensuring smooth
+                <h3 data-i18n-key="features.support.title">Support &amp; Management</h3>
+                <p data-i18n-key="features.support.desc">Empower your team with multi-user access, mobile apps, and priority support — ensuring smooth
                   operation and quick issue resolution.</p>
               </div>
             </div>
@@ -202,8 +210,8 @@
             <img src="images/undraw_gift_card_6ekc.svg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-5 pl-lg-5 ml-auto mt-md-5">
-            <h2 class="text-black">Communicate and gather feedback</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto
+            <h2 class="text-black" data-i18n-key="featureBlocks.title">Communicate and gather feedback</h2>
+            <p class="mb-4" data-i18n-key="featureBlocks.textA">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto
               autem molestias corrupti officia veniam.</p>
             <div class="author-box" data-aos="fade-left">
               <div class="d-flex mb-4">
@@ -212,10 +220,10 @@
                 </div>
                 <div class="mr-auto text-black">
                   <strong class="font-weight-bold mb-0">Grey Simpson</strong> <br>
-                  Co-Founder, XYZ Inc.
+                  <span data-i18n-key="featureBlocks.role">Co-Founder, XYZ Inc.</span>
                 </div>
               </div>
-              <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores
+              <blockquote data-i18n-key="featureBlocks.quote">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores
                 inventore aperiam iure?&rdquo;</blockquote>
             </div>
           </div>
@@ -226,8 +234,8 @@
             <img src="images/undraw_metrics_gtu7.svg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-5 pr-lg-5 mr-auto mt-5 order-2 order-lg-1">
-            <h2 class="text-black">Communicate and gather feedback</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto
+            <h2 class="text-black" data-i18n-key="featureBlocks.title">Communicate and gather feedback</h2>
+            <p class="mb-4" data-i18n-key="featureBlocks.textB">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto
               autem molestias corrupti officia veniam</p>
             <div class="author-box" data-aos="fade-right">
               <div class="d-flex mb-4">
@@ -236,10 +244,10 @@
                 </div>
                 <div class="mr-auto text-black">
                   <strong class="font-weight-bold mb-0">Kimberly Gush</strong> <br>
-                  Co-Founder, XYZ Inc.
+                  <span data-i18n-key="featureBlocks.role">Co-Founder, XYZ Inc.</span>
                 </div>
               </div>
-              <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores
+              <blockquote data-i18n-key="featureBlocks.quote">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores
                 inventore aperiam iure?&rdquo;</blockquote>
             </div>
           </div>
@@ -250,8 +258,8 @@
             <img src="images/undraw_gift_card_6ekc.svg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-5 pl-lg-5 ml-auto mt-md-5">
-            <h2 class="text-black">Communicate and gather feedback</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto
+            <h2 class="text-black" data-i18n-key="featureBlocks.title">Communicate and gather feedback</h2>
+            <p class="mb-4" data-i18n-key="featureBlocks.textA">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto
               autem molestias corrupti officia veniam.</p>
             <div class="author-box" data-aos="fade-left">
               <div class="d-flex mb-4">
@@ -260,10 +268,10 @@
                 </div>
                 <div class="mr-auto text-black">
                   <strong class="font-weight-bold mb-0">Grey Simpson</strong> <br>
-                  Co-Founder, XYZ Inc.
+                  <span data-i18n-key="featureBlocks.role">Co-Founder, XYZ Inc.</span>
                 </div>
               </div>
-              <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores
+              <blockquote data-i18n-key="featureBlocks.quote">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores
                 inventore aperiam iure?&rdquo;</blockquote>
             </div>
           </div>
@@ -274,8 +282,8 @@
             <img src="images/undraw_metrics_gtu7.svg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-5 pr-lg-5 mr-auto mt-5 order-2 order-lg-1">
-            <h2 class="text-black">Communicate and gather feedback</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto
+            <h2 class="text-black" data-i18n-key="featureBlocks.title">Communicate and gather feedback</h2>
+            <p class="mb-4" data-i18n-key="featureBlocks.textB">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto
               autem molestias corrupti officia veniam</p>
             <div class="author-box" data-aos="fade-right">
               <div class="d-flex mb-4">
@@ -284,10 +292,10 @@
                 </div>
                 <div class="mr-auto text-black">
                   <strong class="font-weight-bold mb-0">Kimberly Gush</strong> <br>
-                  Co-Founder, XYZ Inc.
+                  <span data-i18n-key="featureBlocks.role">Co-Founder, XYZ Inc.</span>
                 </div>
               </div>
-              <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores
+              <blockquote data-i18n-key="featureBlocks.quote">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores
                 inventore aperiam iure?&rdquo;</blockquote>
             </div>
           </div>
@@ -300,7 +308,7 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
-            <h2 class="section-title mb-3">About Us</h2>
+            <h2 class="section-title mb-3" data-i18n-key="about.title">About Us</h2>
           </div>
         </div>
         <div class="row mb-5">
@@ -308,16 +316,16 @@
             <img src="images/undraw_bookmarks_r6up.svg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-5 ml-auto pl-lg-5">
-            <h2 class="text-black mb-4 h3 font-weight-bold">Our Mission</h2>
-            <p class="mb-4">Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis
+            <h2 class="text-black mb-4 h3 font-weight-bold" data-i18n-key="about.mission.title">Our Mission</h2>
+            <p class="mb-4" data-i18n-key="about.mission.body">Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis
               consectetur maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam
               delectus! At maiores, itaque.</p>
             <ul class="ul-check mb-5 list-unstyled success">
-              <li>Laborum enim quasi at modi</li>
-              <li>Ad at tempore</li>
-              <li>Labore quaerat esse</li>
+              <li data-i18n-key="about.mission.point1">Laborum enim quasi at modi</li>
+              <li data-i18n-key="about.mission.point2">Ad at tempore</li>
+              <li data-i18n-key="about.mission.point3">Labore quaerat esse</li>
             </ul>
-            <p><a href="#contact-section" class="btn btn-primary">Contact Us</a></p>
+            <p><a href="#contact-section" class="btn btn-primary" data-i18n-key="about.cta">Contact Us</a></p>
           </div>
         </div>
       </div>
@@ -394,11 +402,11 @@
     </div>
   </div> -->
 
-    <div class="site-section testimonial-wrap bg-light" id="testimonials-section">
+    <div class="site-section testimonial-wrap bg-white" id="testimonials-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
-            <h2 class="section-title mb-3">Testimonials</h2>
+            <h2 class="section-title mb-3" data-i18n-key="testimonials.title">Testimonials</h2>
           </div>
         </div>
       </div>
@@ -410,7 +418,7 @@
             </figure>
 
             <blockquote class="mb-3">
-              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+              <p data-i18n-key="testimonials.quote1">&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
                 quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
                 dolores excepturi earum unde iusto.&rdquo;</p>
             </blockquote>
@@ -423,7 +431,7 @@
               <div><img src="images/person_4.jpg" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
             </figure>
             <blockquote class="mb-3">
-              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+              <p data-i18n-key="testimonials.quote2">&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
                 quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
                 dolores excepturi earum unde iusto.&rdquo;</p>
             </blockquote>
@@ -436,7 +444,7 @@
               <div><img src="images/person_1.jpg" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
             </figure>
             <blockquote class="mb-3">
-              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+              <p data-i18n-key="testimonials.quote3">&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
                 quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
                 dolores excepturi earum unde iusto.&rdquo;</p>
             </blockquote>
@@ -496,47 +504,47 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
-            <h2 class="section-title mb-3 text-white">Contact Us</h2>
+            <h2 class="section-title mb-3 text-white" data-i18n-key="contact.title">Contact Us</h2>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-7 mb-5">
             <form action="#" class="p-5 bg-white">
-              <h2 class="h4 text-black mb-5">Contact Form</h2>
+              <h2 class="h4 text-black mb-5" data-i18n-key="contact.form.title">Contact Form</h2>
               <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control rounded-0">
+                  <label class="text-black" for="fname" data-i18n-key="contact.form.firstName">First Name</label>
+                  <input type="text" id="fname" class="form-control rounded-0" data-i18n-placeholder="contact.form.firstNamePlaceholder" placeholder="First Name">
                 </div>
                 <div class="col-md-6">
-                  <label class="text-black" for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control rounded-0">
+                  <label class="text-black" for="lname" data-i18n-key="contact.form.lastName">Last Name</label>
+                  <input type="text" id="lname" class="form-control rounded-0" data-i18n-placeholder="contact.form.lastNamePlaceholder" placeholder="Last Name">
                 </div>
               </div>
               <div class="row form-group">
 
                 <div class="col-md-12">
-                  <label class="text-black" for="email">Email</label>
-                  <input type="email" id="email" class="form-control rounded-0">
+                  <label class="text-black" for="email" data-i18n-key="contact.form.email">Email</label>
+                  <input type="email" id="email" class="form-control rounded-0" data-i18n-placeholder="contact.form.emailPlaceholder" placeholder="Email">
                 </div>
               </div>
               <div class="row form-group">
 
                 <div class="col-md-12">
-                  <label class="text-black" for="subject">Subject</label>
-                  <input type="subject" id="subject" class="form-control rounded-0">
+                  <label class="text-black" for="subject" data-i18n-key="contact.form.subject">Subject</label>
+                  <input type="subject" id="subject" class="form-control rounded-0" data-i18n-placeholder="contact.form.subjectPlaceholder" placeholder="Subject">
                 </div>
               </div>
               <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="text-black" for="message">Message</label>
+                  <label class="text-black" for="message" data-i18n-key="contact.form.message">Message</label>
                   <textarea name="message" id="message" cols="30" rows="7" class="form-control rounded-0"
-                    placeholder="Leave your message here..."></textarea>
+                    data-i18n-placeholder="contact.form.messagePlaceholder" placeholder="Leave your message here..."></textarea>
                 </div>
               </div>
               <div class="row form-group">
                 <div class="col-md-12">
-                  <input type="submit" value="Send Message" class="btn btn-primary mr-2 mb-2">
+                  <input type="submit" value="Send Message" class="btn btn-primary mr-2 mb-2" data-i18n-value="contact.form.submit">
                 </div>
               </div>
             </form>
@@ -563,8 +571,9 @@
           <div class="col-md-12">
             <p class="mb-0">
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy;
-              <script>document.write(new Date().getFullYear());</script> All rights reserved
+              <span data-i18n-key="footer.rights.prefix">Copyright &copy;</span>
+              <script>document.write(new Date().getFullYear());</script>
+              <span data-i18n-key="footer.rights.suffix">All rights reserved</span>
             </p>
           </div>
         </div>
@@ -584,6 +593,7 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 
 </html>
